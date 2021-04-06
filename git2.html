@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Git for dummys</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+<body>
+
+    <p><span>A Gitről.</span></p>
+    <p>A Git egy nyílt forráskódú, elosztott verziókezelő szoftver, vagy másképpen egy szoftverforráskód-kezelő rendszer, amely a sebességre helyezi a hangsúlyt. A Gitet eredetileg Linus Torvalds fejlesztette ki a Linux kernel fejlesztéséhez. Minden Git munkamásolat egy teljes értékű repository teljes verziótörténettel és teljes revíziókövetési lehetőséggel, amely nem függ a hálózat elérésétől vagy központi szervertől.</p>
+    &nbsp;
+    <p><span>A Githubról.</span></p>
+    <p>A GitHub, Inc. egy egyesült államokbeli nemzetközi vállalat, amely a Git segítségével szoftverfejlesztési verziókövetés-szolgáltatást nyújt. 2018-ban a Microsoft leányvállalata lett 7,5 milliárd dollárért. Saját funkcióin felül a Git elosztott verziókövetését és forráskódkezelését (SCM) teszi elérhetővé. Hozzáférés-kezelést és számos együttműködési funkciót nyújt, mint például bugkövetés, szolgáltatáslekérés, feladatkezelés, valamint wikiket minden projekthez.</p>
+    &nbsp;
+    <p><span>Git parancsok.</span></p>
+    
+    <ol>
+        <li>Felhasználónév, email cím.
+            <ul>
+                <li>git config --global user.name "Github-on megadott név"</li>
+                <li>git config --global user.email "Github-on regisztrált emailcím"</li>
+            </ul>
+        </li>
+        <li>Repository létrehozás.
+            <ul>
+                <li>mkdir repository-name</li>
+                <li>cd repository-name</li>
+                <li>git init</li>
+            </ul>
+        </li>
+        <li>Távoli kapcsolat beállítása feltöltéshez.
+            <ul>
+                <li>git remote add origin repository-link (ez a link githubon code-ból elérhető közvetlen link)</li>
+                <li>git remote -v (a kapcsolat lekérdezése)</li>
+                <li>git fetch origin (távoli kapcsolat frissítése)</li>
+                <li>git branch –a (az összes branch lekérdezése)</li>
+            </ul>
+        </li>
+        <li>Fájl hozzáadása az átmeneti tárolóhoz. Pirossal jelzi azokat, amik nem kerültek be, ellenkező esetben zölddel azokat amik bekerültek.
+            <ul>
+                <li>git add file-name (egyetlen fájl hozzáadása)</li>
+                <li>git add . (minden az aktuális mappában, vagy annak almappáiban található fájl hozzáadása)</li>
+            </ul>
+        </li>
+        <li>Státusz lekérdezése.
+            <ul>
+                <li>git status</li>
+            </ul>
+        </li>
+        <li>Átmeneti tárolóból a repoba való áttöltés
+            <ul>
+                <li>git commit -m "Kötelező megjegyzést tenni"</li>
+            </ul>
+        </li>
+        <li>Eddigi verzió megtekintése
+            <ul>
+                <li>git log</li>
+            </ul>
+        </li>
+        <li>Fájl és verzió feltöltése távoli tárhelyre
+            <ul>
+                <li>git remote –v (kapcsolatot ellenőrizzük)</li>
+                <li>git push origin master</li>
+            </ul>
+        </li>
+        <li>Távoli tárhely adatainak letöltése, helyi verzió frissítése
+                
+                    <ul>
+                        <li>git pull origin master</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <a href="git.html"><img src="bal_nyil.gif"></a>
+</body>
+</html>
